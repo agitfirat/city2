@@ -94,5 +94,4 @@ choix_critere = st.selectbox('Choisissez un critère :', ["Je veux me sentir en 
 top5_departements(choix_critere)
 
 if st.button("Partie visuel"):
-        # Exécuter l'application Streamlit cody.py en arrière-plan
-     subprocess.run(["streamlit", "run", "analyse.py"])
+    st.markdown("[Lien vers l'application visuelle](https://3f1ranalyse.streamlit.app)")
