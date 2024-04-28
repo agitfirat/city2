@@ -93,5 +93,5 @@ choix_critere = st.selectbox('Choisissez un critère :', ["Je veux me sentir en 
 # Afficher le top 5 des départements correspondant au critère choisi
 top5_departements(choix_critere)
 
-if st.button("Partie visuel"):
-    st.markdown("[Lien vers l'application visuelle](https://3f1ranalyse.streamlit.app)")
+if st.button("Partie visuel", key="redirect_button"):
+    st.markdown("<a href='https://3f1ranalyse.streamlit.app' target='_blank'>Redirection vers l'application visuelle</a>", unsafe_allow_html=True)
