@@ -8,7 +8,7 @@ st.markdown("<h1 style='text-align: center;'>CODY+</h1>", unsafe_allow_html=True
 def top5_departements(choix_critere):
     if choix_critere == "Je veux me sentir en sécurité":
         # Charger les données du premier CSV (remplacez ce chemin par le vôtre)
-        df = pd.read_csv('Crime21.csv', sep=';')
+        df = pd.read_csv('crime21.csv', sep=';')
         # Sélectionner les 5 départements avec le taux de crime le plus faible
         top5 = df.nsmallest(5, 'taux crime/1000')[['Dep', 'nom']]
         # Centrer le tableau
